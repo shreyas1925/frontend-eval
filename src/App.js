@@ -10,11 +10,11 @@ const App = () => {
     return (
         <div data-testid='app'>
            <BrowserRouter>
-                {/* <Navbar /> */}
                 <Routes>
                     <Route path={`${HOME_ROUTE}`} element={<EventList />} /> 
                     <Route path={`/event/:id`} element={<EventDetails />} />
                     <Route path='*' element={<PageNotFound />} />
+                    <Route path={`${ERROR_ROUTE}`} element={<ErrorPage />} />
                 </Routes>
                 {/* <Footer/> */}
             </BrowserRouter>

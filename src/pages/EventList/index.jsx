@@ -23,7 +23,7 @@ const EventList = () => {
     }, []);
 
     return (
-        <div>
+        <div data-testid='event'>
 
             <AllButtons events={events} setAllEvents={setAllEvents} filterdata={filterdata} setFilterdata={setFilterdata}/>
         <div className="app--container">

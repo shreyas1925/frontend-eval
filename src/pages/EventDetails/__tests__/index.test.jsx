@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-
+import makeRequest from '../../../utils/makeRequest'
+import EventDetails from "..";
+jest.mock('../../../utils/makeRequest');
 const event  = {
     "id": 4,
     "name": "Karaoke Contest",
@@ -15,13 +17,15 @@ const event  = {
 }
 
 describe("Event Card", () => {
+    makeRequest.mockResolvedValue(event);
     it("should render correctly and create a snapshot", () => {
-        const {asFragment } = render(<BrowserRouter><EventCard event={event} /></BrowserRouter> );
+        const {asFragment } = render(<BrowserRouter><EventDetails event={event} /></BrowserRouter> );
         expect(asFragment()).toMatchSnapshot();
       });
 
     it("should render correctly", () => {
-        render(<BrowserRouter><EventCard event={event} /></BrowserRouter> );
+        makeRequest.mockResolvedValue(event);
+        render(<BrowserRouter><EventDetails/></BrowserRouter> );
         const element = screen.getByTestId("event-card");
         expect(element).toBeInTheDocument();
     });

@@ -19,7 +19,7 @@ describe("PageNotFound Page", () => {
 
     it("should display text after rendering", () => {
         render(<BrowserRouter><PageNotFound/></BrowserRouter>);
-        const errorPageElement = screen.getByText("Look like you're lost , return to home");
+        const errorPageElement = screen.getByText("Look like you're lost , return to home",{exact: false});
         expect(errorPageElement).toBeInTheDocument();
       });
 });
