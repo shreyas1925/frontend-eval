@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllButtons should render correctly and create a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="all--buttons-container"
+    data-testid="all-btns"
+  >
+    <div
+      class="left--buttons"
+    >
+      <div
+        class="button--content"
+      >
+        <p>
+          <i
+            class="fa fa-filter"
+          />
+        </p>
+        <p>
+          Filter 
+          <i
+            aria-hidden="true"
+            class="fa fa-caret-up"
+          />
+        </p>
+      </div>
+      <div
+        class="button--content"
+      >
+        <input
+          name="content"
+          type="radio"
+        />
+        <p>
+          ALL
+        </p>
+      </div>
+      <div
+        class="button--content"
+      >
+        <input
+          name="content"
+          type="radio"
+        />
+        <p>
+          REGISTERED
+        </p>
+      </div>
+    </div>
+    <div
+      class="right--buttons"
+    >
+      <div
+        class="button--content"
+      >
+        <input
+          class="search"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <p>
+          <i
+            aria-hidden="true"
+            class="fa fa-search"
+          />
+        </p>
+      </div>
+      <div
+        class="mini-content"
+      >
+        <div
+          class="button--content"
+        >
+          <p>
+            BOOKMARKED
+          </p>
+          <input
+            name="content"
+            type="radio"
+          />
+        </div>
+        <div
+          class="button--content"
+        >
+          <p>
+            SEATS AVAILABLE
+          </p>
+          <input
+            name="content"
+            type="radio"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

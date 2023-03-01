@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllButtons should render correctly and create a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="footer"
+    data-testid="footer"
+  >
+    <h1>
+      THEMES
+    </h1>
+    <div
+      class="btn-container"
+    >
+      <button
+        class="btn purple-btn"
+        type="button"
+      />
+      <button
+        class="btn blue-btn"
+        type="button"
+      />
+      <button
+        class="btn gray-btn"
+        type="button"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

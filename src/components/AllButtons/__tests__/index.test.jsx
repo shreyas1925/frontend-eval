@@ -1,16 +1,15 @@
 
 import { render, screen } from "@testing-library/react";
-import Navbar from "..";
-import { BrowserRouter } from "react-router-dom";
+import AllButtons from "..";
 describe("AllButtons", () => {
     it("should render correctly and create a snapshot", () => {
-        const {asFragment } = render(<BrowserRouter><Navbar /></BrowserRouter>);
+        const {asFragment } = render(<AllButtons />);
         expect(asFragment()).toMatchSnapshot();
       });
 
     it("should render correctly", () => {
-        render(<BrowserRouter><Navbar /></BrowserRouter>);
-        const element = screen.getByTestId("navbar");
+        render(<AllButtons />);
+        const element = screen.getByTestId("all-btns");
         expect(element).toBeInTheDocument();
     });
 });

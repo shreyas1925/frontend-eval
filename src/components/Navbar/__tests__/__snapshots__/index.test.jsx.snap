@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllButtons should render correctly and create a snapshot 1`] = `
+<DocumentFragment>
+  <header
+    data-testid="navbar"
+  >
+    <a
+      href="/"
+    >
+      EVENTIFY
+    </a>
+  </header>
+</DocumentFragment>
+`;
